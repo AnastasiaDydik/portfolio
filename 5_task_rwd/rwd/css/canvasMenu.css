@@ -1,0 +1,64 @@
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@media screen and (max-width: 750px) {
+
+    .hamburger-checkbox {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .hamburger-label {
+        position: absolute;
+        top: 25px;
+        right: 32px;
+        z-index: 1;
+        display: block;
+        width: 42px;
+        height: 42px;
+        font: 42px/42px fontawesome;
+        text-align: center;
+        color: #444;
+        cursor: pointer;
+    }
+
+    .goriz-nav {
+        overflow: hidden;
+        border: 2px solid black;
+        width: 0;
+        height: 0;
+        padding: 0;
+        background: #f3efe0;
+        color: #eee;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .hamburger-checkbox:checked ~ .goriz-nav {
+        width: 70%;
+        height: auto;
+    }
+
+    .header {
+        align-items: flex-start;
+    }
+
+    .menu {
+        list-style: none;
+        width: 100%;
+    }
+
+    .menu li {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 30px;
+        font-family: monospace;
+        clear: both;
+    }
+
+    .menu-arrow {
+        display: none;
+    }
+
+    .headerLogo {
+      margin-left: 60%;
+    }
+}

@@ -1,0 +1,300 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+    background-color: rgb(217, 217,217);
+}
+
+/* C A L E N D A R */
+.calendar-container {
+    position: relative;
+    margin: 50px auto;
+    width: 346px;
+    min-height: 427px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.55);
+    background-color: white;
+}
+
+.header{
+    position: relative;
+    height: 64px;
+    border-radius: 3px 3px 0 0;
+    background-color: rgb(64,74,88);
+}
+
+    .header h3{
+        font-family: GothamSSm-Book, sans-serif;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 21px 1px 20px 0;
+    }
+
+    .header .sprite{
+        display: block;
+        width: 16px;
+        height: 17px;
+        position: absolute;
+
+    }
+
+        .arrow-prev{
+            background: url('arrows.png') 0 0;
+            left: 35px;
+            top: 21px;
+        }
+
+        .arrow-next{
+            background: url('arrows.png') 15px 0;
+            top: 21px;
+            left: 295px;
+        }
+
+.calendar {
+    margin: 0 auto;
+    padding: 3px 0 18px 0;
+    border-spacing: 12px 19px;
+}
+
+    .calendar td{
+        text-align: center;
+    }
+
+    .calendar .days{
+        text-align: center;
+        font-family: GothamSSm-Medium, sans-serif;
+        font-size: 14px;
+        color: rgb(104, 104,104);
+    }
+
+    .calendar a{
+        font-family: GothamSSm-Book,sans-serif;
+        font-size: 14px;
+        color: rgb(102, 102,102);
+        text-decoration: none;
+    }
+
+    .calendar a:hover{
+        text-decoration: underline;
+    }
+
+    .calendar .active {
+        width: 37px;
+        height: 37px;
+        border-radius: 57%;
+        background-color:rgb(251, 99, 98);
+    }
+
+        .calendar .active a{
+            color: white;
+        }
+
+    .calendar .off a{
+        color: rgb(197, 197,197);
+        font-family: GothamSSm-Book,sans-serif;
+    }
+
+    .calendar .event a{
+        color:rgb(251, 99, 98);
+        font-weight: bold;
+    }
+
+.button-calendar{
+    padding: 20px 0 19px 0;
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 3px;
+    text-align: center;
+    background-color:rgb(251, 99, 98);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.55);
+}
+
+    .button-calendar a{
+        color: white;
+        font-family: GothamSSm-Book,sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+
+/* D E S T I N A T I O N */
+
+.destination-container{
+    position: relative;
+    margin: 100px 50px 100px 50px;
+    width: 791px;
+    min-height: 340px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.55);
+    background-color: white;
+    border-radius: 3px;
+}
+
+.destination-container:after{
+    clear: both;
+}
+
+.menu{
+    float: left;
+    width: 72px;
+    min-height: inherit;
+    border-radius: 3px 0 3px 0;
+    background-color: rgb(64,74,88)
+
+}
+
+    .menu ul{
+        list-style-type: none;
+        height: inherit
+    }
+
+    .menu li:nth-child(2) {
+        border-bottom: 1px solid rgb(36, 41,49);
+        border-top: 1px solid rgb(36, 41,49);
+    }
+
+    .menu li a{
+        display: block;
+        padding: 57px 30px 56px 30px;
+        text-decoration: none;
+    }
+
+    .menu a.active-menu,
+    .menu li a:hover{
+        background-color:rgb(251, 99, 98);
+    }
+
+    .sprite2{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+
+    }
+
+        .icon-review{
+            background: url('destination.png') 0 0;
+            left: 10px;
+            top: 30px;
+        }
+
+        .icon-location{
+            background: url('destination.png') 0 -50px;
+            left: 11px;
+            top: 145px;
+        }
+
+        .icon-star{
+            background: url('destination.png') 0 -100px;
+            top: 262px;
+            left: 11px;
+        }
+
+.info-place{
+   display: inline-block;
+   padding: 25px 30px 20px 35px;
+   width: 291px;
+}
+
+    .info-place h1{
+        font-family: GothamSSm-Medium,sans-serif;
+        font-size: 20px;
+        padding: 0 91px 9px 0;
+        line-height: 1.5em;
+        color: rgb(77,77,77);
+    }
+
+    .info-place .reviews{
+        font-family: GothamSSm-Light,sans-serif;
+        font-size: 14px;
+        color: rgb(197, 197,197);
+
+    }
+
+    .info-place .amount{
+        font-family: GothamSSm-Light,sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(77,77,77);
+    }
+
+    .info-place p{
+        font-family: GothamSSm-Light,sans-serif;
+        font-size: 14px;
+        padding: 28px 0 17px 0;
+        line-height: 1.7em;
+        color: rgb(197, 197,197);
+    }
+
+    .info-place a{
+        font-family: GothamSSm-Light,sans-serif;
+        font-size: 14px;
+        color:rgb(251, 99, 98);
+        text-decoration: none;
+    }
+
+    .info-place a:hover{
+        font-weight: bold;
+    }
+
+.picture-place{
+   float: right;
+   position: relative;
+   border-radius: 3px 0 3px 0;
+}
+
+    .picture-place img{
+        border-radius: 3px 0 3px 0;
+    }
+
+    .picture-place .feedback{
+        position: absolute;
+        bottom: 28px;
+        right: 28px;
+    }
+
+        .feedback a {
+            display: inline-block;
+
+        }
+
+        .feedback .icon-message{
+            background: url('destination.png') 0 -150px;
+            left: 2px;
+            bottom: -15px;
+        }
+
+        .feedback .icon-like{
+            background: url('destination.png') 0 -200px;
+            right: 40px;
+            bottom: -15px;
+        }
+
+        .feedback .number{
+            font-family: GothamSSm-Book, sans-serif;
+            font-size: 16px;
+            color: white;
+            margin-left: 45px;
+        }
+
+/* B A R - G R A P H*/
+
+
+@font-face {
+    font-family: GothamSSm-Medium;
+    src: url(fonts/GothamSSm-Medium.woff) format("opentype");
+}
+
+@font-face {
+    font-family: GothamSSm-Book;
+    src: url(fonts/GothamSSm-Book.woff) format("opentype");
+}
+
+@font-face {
+    font-family: GothamSSm-Light;
+    src: url(fonts/GothamSSm-Light.woff) format("opentype");
+}
+

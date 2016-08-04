@@ -1,0 +1,86 @@
+html, body, .container {
+    height: 100%;  
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;/*гл ось*/
+    flex-wrap:wrap;/*многострочность,те что не влезают на новую строку*/
+    margin:0 auto;
+    flex: 1 100%;
+}
+
+.header {
+    height: 20%;
+    width: 100%;
+    background-color: #ccc8ba;
+    padding: 10px;
+    box-sizing:border-box;
+}
+
+.nav {
+    background-color: #ebe9e3;
+    height: 60%;
+    padding: 10px;
+    box-sizing:border-box;
+    flex: 1.4 1 0px;
+}
+   
+.main {
+    box-sizing:border-box;
+    background-color: #e7e3d4;
+    height: 60%;
+    padding: 10px;
+    flex: 4 1 0px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap; 
+}
+
+.aside {
+    background-color: #f6f3eb;
+    height: 60%;
+    padding: 10px;
+    box-sizing:border-box;
+    flex: 1 1 0px;
+}
+
+.footer {
+    height: 20%;
+    width: 100%;
+    background-color: #ccc8ba;
+    padding: 10px;
+    box-sizing:border-box;
+}
+
+.content {
+    border-radius: 15px;
+    background-color: #ffffff;
+    padding: 5px;
+    box-sizing:border-box;
+    margin: 5px;
+}
+
+.content h3 {
+    text-align: center;
+}
+
+.content img {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+.content p {
+    margin-left: 110px;
+    overflow: hidden;
+
+}
+.clear {
+    clear: both;
+}

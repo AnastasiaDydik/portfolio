@@ -1,0 +1,146 @@
+.main_div{
+	height: 2000px;
+	width: 1020px;
+	margin: auto;
+}
+
+.invisible_div{
+	height: 627px;
+	width: 470px;
+	position: relative;
+	margin: auto;
+	top: -51px;
+}
+
+.lower_div, .average_div, .upper_div{
+	height: 607px;
+	width: 460px;
+	position: absolute;	
+	margin: auto;
+}
+.lower_div{	
+	background-color: #0089b2;	
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+}
+
+.average_div{	
+	background-color: #364f86;	
+	top: 5px;
+	left: 5px;
+	z-index: 2;
+}
+
+.upper_div{	
+	background-color: #d8464c;	
+	z-index: 3;
+}
+
+.social_icons{
+	height: 206px;
+	width: 206px;
+	margin: 0px 0px 0px 0px;
+	position: relative;
+	display: inline-block;
+}
+
+.avatar{
+	border-radius: 200px 200px 200px 200px;
+	border: 3px solid #3593c9;
+	height: 200px;
+	width: 200px;
+	position: relative;
+	behavior: url(PIE/PIE.htc);
+}
+
+.facebook, .pinterest, .tumbler, .twitter{
+	background-image: url(../images/sprite.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	width: 34px;
+	height: 34px;
+	position: absolute;  
+	z-index: 3;
+}
+.facebook{
+	background-position: -35px -35px;
+	bottom: 3px;
+  	right: 38px;
+}
+
+.pinterest{
+	background-position: 0px -35px;
+	bottom: -11px;
+  	right: 76px;
+}
+ 
+.tumbler{
+ 	background-position: -35px 0px;
+	bottom: 30px;
+  	right: 5px;
+  }
+
+.twitter{
+	top: 10px;
+  	left: 14px;
+}
+
+.contact{
+ 	height: 131.31px;
+ 	width: 330px;
+ 	position: fixed;
+ 	float: right;
+ 	bottom: 50px;
+ 	right: 0;
+ 	z-index: 4;
+}
+
+/*For IE.*/
+.contact_for_IE{
+ 	height: 131.31px;
+ 	width: 330px;
+ 	filter: alpha(opacity=80);
+ 	background-color: #343434;
+ 	opacity: 0.8;
+ 	position: absolute;
+ 	z-index: -1;
+}
+.yellow_rectangle{
+	height: 86px;
+ 	width: 86px;
+ 	background-color: #f7e35f;
+ 	margin: 24px 15px 20px 22px;
+ 	display: inline-block;
+ 	float:left;
+}
+
+.text_question{
+	width:205px;
+	display: inline-block;
+	float:left;
+	margin-top: 24px;
+
+}
+
+.text_number{
+	width:205px;
+	display: inline-block;
+	float:left; 
+	margin-top: 10px;
+}
+
+.contact p,  .contact span{
+	color:#ffffff;
+	font-family: Arial;
+	font-size: 12px;
+	margin: 0;
+}
+
+.contact span{
+	font-weight: normal;
+}
+
+.contact p{	
+	font-weight: bold;
+}

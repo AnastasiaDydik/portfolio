@@ -1,0 +1,17 @@
+.content {
+    width: 650px;
+    margin: 0 auto 50px;
+    background-color: #29aae2;
+    padding: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    padding: 10px;
+    background: #8cc63f;
+    color: #fff;
+    width: 100%;
+}

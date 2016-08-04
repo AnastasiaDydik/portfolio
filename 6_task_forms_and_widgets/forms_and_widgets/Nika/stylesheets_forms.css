@@ -1,0 +1,334 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+    background-color: rgb(217, 217,217);
+}
+
+/* C A L E N D A R */
+.calendar-container {
+    position: relative;
+    margin: 50px auto;
+    width: 346px;
+    min-height: 427px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.55);
+    background-color: white;
+}
+
+.header{
+    position: relative;
+    height: 64px;
+    border-radius: 3px 3px 0 0;
+    background-color: rgb(64,74,88);
+}
+
+    .header h3{
+        font-family: GothamSSm-Book, sans-serif;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 21px 1px 20px 0;
+    }
+
+    .header .sprite{
+        display: block;
+        width: 16px;
+        height: 17px;
+        position: absolute;
+
+    }
+
+        .arrow-prev{
+            background: url('img/sprite.png') 0 0;
+            left: 30px;
+            top: 21px;
+        }
+
+        .arrow-next{
+            background: url('img/sprite.png') 0 -16px;
+            top: 21px;
+            left: 293px;
+        }
+
+    .previous:hover .arrow-prev{
+        background: url('img/sprite.png') 40px 0;
+    }
+
+    .next:hover .arrow-next{
+        background: url('img/sprite.png') 40px -16px;
+    }
+
+.calendar {
+    margin: 0 auto;
+    padding: 3px 0 18px 0;
+    border-spacing: 12px 19px;
+}
+
+    .calendar td{
+        text-align: center;
+    }
+
+    .calendar .days{
+        text-align: center;
+        font-family: GothamSSm-Medium, sans-serif;
+        font-size: 14px;
+        color: rgb(104, 104,104);
+    }
+
+    .calendar a{
+        font-family: GothamSSm-Book,sans-serif;
+        font-size: 14px;
+        color: rgb(102, 102,102);
+        text-decoration: none;
+    }
+
+    .calendar a:hover{
+        text-decoration: underline;
+    }
+
+    .calendar .active {
+        width: 37px;
+        height: 37px;
+        border-radius: 57%;
+        background-color:rgb(251, 99, 98);
+    }
+
+        .calendar .active a{
+            color: white;
+        }
+
+    .calendar .off a{
+        color: rgb(197, 197,197);
+        font-family: GothamSSm-Book,sans-serif;
+    }
+
+    .calendar .event a{
+        color:rgb(251, 99, 98);
+        font-weight: bold;
+    }
+
+.button-calendar{
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 3px;
+    text-align: center;
+    background-color:rgb(251, 99, 98);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.55);
+}
+
+    .button-calendar a{
+        padding: 20px 0 19px 0;
+        display: block;
+        color: white;
+        font-family: GothamSSm-Book,sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+
+/* D E S T I N A T I O N */
+
+.destination-container{
+    position: relative;
+    width: 791px;
+    min-height: 340px;
+    margin: 100px 50px 100px 50px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.55);
+    background-color: white;
+}
+
+.destination-container:after{
+    clear: both;
+}
+
+.menu{
+    float: left;
+    width: 72px;
+    min-height: inherit;
+    border-radius: 3px 0 0 3px;
+    background-color: rgb(64,74,88)
+
+}
+
+    .menu ul{
+        list-style-type: none;
+        height: inherit
+    }
+
+    .menu li:nth-child(2) {
+        border-bottom: 1px solid rgb(36, 41,49);
+        border-top: 1px solid rgb(36, 41,49);
+    }
+
+    .menu li a{
+        display: block;
+        padding: 57px 30px 56px 30px;
+        text-decoration: none;
+    }
+
+    .menu a.active-menu,
+    .menu li a:hover{
+        background-color:rgb(251, 99, 98);
+    }
+
+    .sprite2{
+        display: block;
+        position: absolute;
+    }
+
+        .icon-review{
+            width: 40px;
+            height: 20px;
+            background: url('img/sprite.png') 0 -185px;
+            left: 15px;
+            top: 49px;
+        }
+
+        .icon-location{
+            width: 40px;
+            height: 30px;
+            background: url('img/sprite.png') 0 -206px;
+            left: 22px;
+            top: 154px;
+        }
+
+        .icon-star{
+            width: 40px;
+            height: 25px;
+            background: url('img/sprite.png') 0 -235px;;
+            top: 270px;
+            left: 17px;
+        }
+
+.info-place{
+   display: inline-block;
+   padding: 26px 30px 20px 35px;
+   width: 291px;
+}
+
+    .info-place h1{
+        padding: 0 91px 10px 0;
+        color: rgb(77,77,77);
+        font-family: GothamSSm-Medium,sans-serif;
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+
+    .info-place .reviews{
+        font-family: GothamSSm-Light,sans-serif;
+        font-size: 14px;
+        color: rgb(197, 197,197);
+
+    }
+
+    .info-place .amount{
+        font-family: GothamSSm-Light,sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgb(77,77,77);
+    }
+
+    .info-place a.amount{
+        text-decoration: none;
+    }
+
+        .info-place a:hover.amount{
+            text-decoration: underline;
+        }
+
+    .info-place p{
+        padding: 28px 0 14px 0;
+        font-family: GothamSSm-Light,sans-serif;
+        font-size: 14px;
+        line-height: 1.7em;
+        color: rgb(197, 197,197);
+    }
+
+    .info-place a.read-more{
+        font-family: GothamSSm-Light,sans-serif;
+        font-size: 14px;
+        color:rgb(251, 99, 98);
+        text-decoration: none;
+    }
+
+    .info-place a:hover.read-more{
+        font-weight: bold;
+    }
+
+.picture-place{
+   float: right;
+   position: relative;
+   border-radius: 0 3px 3px 0;
+}
+
+    .picture-place img{
+        border-radius: 0 3px 3px 0;
+    }
+
+    .picture-place .feedback{
+        position: absolute;
+        bottom: 26px;
+        right: 28px;
+    }
+
+        .feedback a {
+            display: inline-block;
+        }
+
+        .feedback .icon-message{
+            width: 40px;
+            height: 25px;
+            background: url('img/sprite.png') 0 -262px;
+            left: 7px;
+            bottom: -2px;
+        }
+
+            .message:hover .icon-message{
+                background: url('img/sprite.png') 40px -262px;
+            }
+
+        .feedback .icon-like{
+            width: 40px;
+            height: 25px;
+            background: url('img/sprite.png') 0 -287px;
+            right: 44px;
+            bottom: 0;
+        }
+
+            .like:hover .icon-like{
+                background: url('img/sprite.png') 40px -287px;
+            }
+
+        .feedback .number{
+            font-family: GothamSSm-Book, sans-serif;
+            font-size: 16px;
+            color: white;
+            margin-left: 45px;
+        }
+
+/* B A R - G R A P H*/
+
+
+
+
+
+@font-face {
+    font-family: GothamSSm-Medium;
+    src: url(fonts/GothamSSm-Medium.woff) format("opentype");
+}
+
+@font-face {
+    font-family: GothamSSm-Book;
+    src: url(fonts/GothamSSm-Book.woff) format("opentype");
+}
+
+@font-face {
+    font-family: GothamSSm-Light;
+    src: url(fonts/GothamSSm-Light.woff) format("opentype");
+}
+

@@ -1,0 +1,954 @@
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 54px;
+	background: #d9d9d9;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*---------------- 1 ----------------*/
+
+.calendar-container {
+    position: relative;
+    margin-bottom: 100px;
+    width: 346px;
+    min-height: 427px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.55);
+    background-color: white;
+}
+
+.header {
+    position: relative;
+    height: 64px;
+    border-radius: 3px 3px 0 0;
+    background-color: rgb(64,74,88);
+}
+
+.header h3 {
+    font-family: GothamSSm-Book, sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 21px 1px 20px 0;
+}
+
+.header .sprite {
+    display: block;
+    width: 16px;
+    height: 17px;
+    position: absolute;
+}
+
+.arrow-prev {
+	background: url(../img/sprite.png) no-repeat -3px 0;
+	top: 22px;
+    left: 38px;
+}
+
+.arrow-next {
+    background: url(../img/sprite.png) 4px -16px;
+    top: 21px;
+    left: 293px;
+}
+
+.previous:hover .arrow-prev {
+    background: url(../img/sprite.png) -42px 0px;
+}
+
+.next:hover .arrow-next {
+    background: url(../img/sprite.png) 40px -16px;
+}
+
+.calendar {
+    margin: 0 auto;
+    padding: 3px 0 27px 0;
+    border-spacing: 12px 19px;
+}
+
+.calendar td {
+    text-align: center;
+}
+
+.calendar .days {
+    text-align: center;
+    font-family: GothamSSm-Medium, sans-serif;
+    font-size: 14px;
+    color: rgb(104, 104,104);
+}
+
+.calendar a {
+    font-family: GothamSSm-Book,sans-serif;
+    font-size: 14px;
+    color: rgb(102, 102,102);
+    text-decoration: none;
+}
+
+.calendar a:hover {
+    text-decoration: underline;
+}
+
+.calendar .active {
+    width: 37px;
+    height: 37px;
+    border-radius: 57%;
+    background-color:rgb(251, 99, 98);
+}
+
+.calendar .active a {
+    color: white;
+}
+
+.calendar .off a {
+    color: rgb(197, 197,197);
+    font-family: GothamSSm-Book,sans-serif;
+}
+
+.calendar .event a {
+    color:rgb(251, 99, 98);
+    font-weight: bold;
+}
+
+.button-calendar {
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 3px;
+    text-align: center;
+    background-color:rgb(251, 99, 98);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.55);
+}
+
+.button-calendar a {
+    padding: 20px 0 19px 0;
+    display: block;
+    color: white;
+    font-family: GothamSSm-Book,sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-sizing:border-box;
+}
+
+/*---------------- 2 ----------------*/
+
+.widget2 {
+	width: 346px;
+	border-radius: 4px;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.44);
+	margin-bottom: 100px;
+}
+
+.widget2-picture {
+	height: 184px;
+	position: relative;
+}
+
+.widget2-picture img {
+	width: 346px;
+	height: 185px;
+}
+
+.hotel-name {
+	position: absolute;
+    bottom: 16px;
+    left: 22px;
+    letter-spacing: -0.015em;
+}
+
+.hotel-name h3 {
+	font-family: GothamSSm-Book, Arial, sans-serif;
+	font-size: 25px;
+	font-weight: 300;
+	color: white;
+}
+
+.map {
+	background: url(../img/sprite.png) no-repeat -3px -37px;
+	width: 15px;
+	height: 20px;
+	padding-right: 2px;
+	margin-bottom: -3px;
+	display: inline-block;
+}
+
+.location:hover .map {
+	background: url(../img/sprite.png) no-repeat -43px -37px;	
+}
+
+.hotel-name p {
+	font-family: GothamSSm-Light, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: white;
+	display: inline-block;
+}
+
+.click-backgroundg,
+.calendar-icon,
+.dropdown {
+	width: 17px;
+	height: 17px;
+}
+
+.input-container {
+	position: relative;
+	margin: 9px 0 21px;
+}
+
+.click-backgroundg {
+	border-radius: 2px;
+	background: #414b59;
+	position: absolute;
+	top: 4px;
+	right: 5px;
+	padding: 10px 10px;
+}
+
+.calendar-icon {
+	background: url(../img/sprite.png) no-repeat -2px -61px;
+	display: inline-block;
+}
+
+.click-backgroundg:hover .calendar-icon {
+	background: url(../img/sprite.png) no-repeat -42px -61px;
+}
+
+.dropdown {
+	background: url(../img/sprite.png) no-repeat -3px -139px;
+	display: inline-block;
+}
+
+.check-people {
+	padding-top: 24px;
+	display: inline-block;
+}
+
+
+.check-people ul li:hover {
+	color: #fb6362;
+}
+
+.check-people .input-container {
+	margin-bottom: 38px;
+	position: relative;
+}
+
+.check-people .input-container input {
+	width: 139px;
+	padding: 14px 45px 13px 15px;
+	color: #414b59;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	display: inline-block;
+}
+
+.input-container ul {
+	position: absolute;
+	top: 46px;
+	right: 0;
+	display: none;
+}
+
+.check-people ul li {
+	list-style-type: none;
+	box-sizing: border-box;
+	width: 139px;
+	padding: 7px 16px;
+	border: solid #999898;
+	border-width: 1px 0 0 0;
+	background-color: #f4f4f4;
+	font-family: GothamSSm-Light, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/*---------------- 3 ----------------*/
+
+.destination-container {
+    position: relative;
+    width: 791px;
+    min-height: 340px;
+    margin-bottom: 100px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.55);
+    background-color: white;
+}
+
+.destination-container:after {
+    clear: both;
+}
+
+.menu {
+    float: left;
+    width: 72px;
+    min-height: inherit;
+    border-radius: 3px 0 0 3px;
+    background-color: #242931;
+}
+
+.menu ul {
+    list-style-type: none;
+    height: inherit
+}
+
+.menu li:nth-child(2) {
+    border-bottom: 1px solid #242931;
+    border-top: 1px solid #242931;
+}
+
+.menu li a {
+    display: block;
+    padding: 56px 30px 56px 30px;
+    text-decoration: none;
+}
+
+.menu a.active-menu,
+.menu li a:hover {
+    background-color:#FB6362;
+}
+
+.sprite2 {
+    display: block;
+    position: absolute;
+}
+
+.icon-review {
+    width: 40px;
+    height: 20px;
+    background: url(../img/sprite.png) 0 -185px;
+    left: 18px;
+    top: 48px;
+}
+
+.icon-location {
+    width: 40px;
+    height: 30px;
+    background: url(../img/sprite.png) 0 -206px;
+    left: 24px;
+    top: 154px;
+}
+
+.icon-star {
+    width: 40px;
+    height: 25px;
+    background: url(../img/sprite.png) 0 -235px;;
+    top: 270px;
+    left: 20px;
+}
+
+.info-place {
+   display: inline-block;
+   padding: 26px 30px 20px 35px;
+   width: 291px;
+}
+
+.info-place h1 {
+    padding: 0 91px 10px 0;
+    color: #4d4d4d;
+    font-family: GothamSSm-Medium,sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.info-place .reviews {
+    font-family: GothamSSm-Light,sans-serif;
+    font-size: 14px;
+    color: #999999;
+}
+
+.info-place .amount {
+    font-family: GothamSSm-Light,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4d4d4d;
+}
+
+.info-place a.amount {
+    text-decoration: none;
+}
+
+.info-place a:hover.amount {
+    text-decoration: underline;
+}
+
+.info-place p {
+    padding: 29px 0 14px 0;
+    font-family: GothamSSm-Light,sans-serif;
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #999999;
+}
+
+.info-place a.read-more {
+    font-family: GothamSSm-Light,sans-serif;
+    font-size: 14px;
+    color:#FB6362;
+    text-decoration: none;
+}
+
+.info-place a:hover.read-more {
+    font-weight: bold;
+}
+
+.picture-place {
+   float: right;
+   position: relative;
+   border-radius: 0 3px 3px 0;
+}
+
+.picture-place:after {
+	content: ''; 
+	border: 24px solid transparent;
+	border-left: 24px solid white;
+	position: absolute;
+	left: -1px;
+	top: 36px;
+}
+
+.picture-place img {
+    border-radius: 0 3px 3px 0;
+}
+
+.picture-place .feedback {
+    position: absolute;
+    bottom: 24px;
+    right: 28px;
+}
+
+.feedback a {
+    display: inline-block;
+}
+
+.feedback .icon-message {    
+    background: url(../img/sprite.png) 0 -262px;
+    left: 12px;
+    bottom: -3px;
+}
+
+.message:hover .icon-message {
+    background: url(../img/sprite.png) 38px -262px;
+}
+.feedback .icon-message,
+.feedback .icon-like {
+	width: 40px;
+    height: 25px;
+}
+
+.feedback .icon-like {   
+    background: url(../img/sprite.png) 0 -287px;
+    right: 41px;
+    bottom: -2px;
+}
+
+.like:hover .icon-like {
+    background: url(../img/sprite.png) 38px -287px;
+ }
+
+.feedback .number {
+    font-family: GothamSSm-Book, sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-left: 46px;
+}
+
+/*---------------- 4 ----------------*/
+
+.widget4 {
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color:  #ffffff;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.44);
+	width: 791px;
+	min-height: 340px;
+	margin-bottom: 100px;
+	position: relative;
+	padding: 0 46px;
+	font-family: GothamSSm-Medium, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	color: #666666;
+}
+
+.widget4 ul {
+	list-style-type: none;
+}
+
+.gor {
+	position: absolute;
+	bottom: 40px;
+	left: 104px;
+}
+
+
+.gor li {
+	display: inline-block;
+	width: 55px;
+	text-align: center;
+	padding-right: 31px;
+}
+
+.vert {
+	width: 703px;
+	position: absolute;
+	bottom: 11px;
+	left: 40px;
+}
+
+.vert li {
+	height: 70px;
+	position: relative;
+}
+
+.vert li:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 17px;
+    left: 2px;
+	height: 1px;
+	width: 703px;
+	background: white;
+}
+
+.hist {
+	position: absolute;
+	bottom: 60px;
+    left: 104px;
+}
+
+.hist li {
+	box-sizing: border-box;
+	background: #fb6362;
+	border-radius: 2px;
+	position: relative;
+
+	display: inline-block;
+	width: 55px;
+	margin-right: 31px;
+}
+
+.hist li:hover p {
+	display: inline-block;
+}
+
+.hist p {
+	box-sizing: border-box;
+	width: 55px;
+	height: 30px;
+	padding: 7px;
+	background: #404a58;
+	border-radius: 2px;
+	position: absolute;
+	top: -45px;
+	font-family: GothamSSm-Medium, Arial, sans-serif;
+	color:  #ffffff;
+	font-size: 12px;
+	font-weight: 500;
+	text-align: center;
+	display: none;
+}
+
+.hist p::after {
+    content: ''; 
+	border: 7px solid transparent;
+	border-top: 7px solid #404a58;
+	position: absolute;
+	left: 21px;
+	bottom: -13px;
+}
+
+.mon {
+	height: 49px;
+	-webkit-animation: move-mon 4s; /* Chrome, Safari, Opera */ 
+    animation: move-mon 4s;
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes move-mon {
+    0%   {bottom: 0; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 100%;}
+}
+
+/* Standard syntax */
+@keyframes move-mon {
+    0%   {bottom: 0; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 49px;}
+}
+
+.tues {
+	height: 62px;
+	-webkit-animation: move-tues 4s; 
+    animation: move-tues 4s;
+}
+
+@-webkit-keyframes move-tues {
+    0%   {bottom: 0px; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 62px;}
+}
+
+@keyframes move-tues {
+    0%   {bottom: 0px; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 62px;}
+}
+
+.wed {
+	height: 119px;
+	-webkit-animation: move-wed 4s; 
+	animation: move-wed 4s;
+}
+
+@-webkit-keyframes move-wed {
+    0%   {bottom: 0px; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 119px;}
+}
+
+@keyframes move-wed {
+    0%   {bottom: 0px; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 119px;}
+}
+
+.thu {
+	height: 158px;
+	-webkit-animation: move-thu 4s; 
+    animation: move-thu 4s;
+}
+
+@-webkit-keyframes move-thu {
+    0%   {bottom: 0px; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 158px;}
+}
+
+@keyframes move-thu {
+    0%   {bottom: 0px; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 158px;}
+}
+
+.fri {
+	height: 129px;
+	-webkit-animation: move-fri 4s; 
+    animation: move-fri 4s;
+}
+
+@-webkit-keyframes move-fri {
+    0%   {bottom: 0px; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 129px;}
+}
+
+@keyframes move-fri {
+    0%   {bottom: 0px; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 129px;}
+}
+
+.sat {
+	height: 169px;
+	-webkit-animation: move-sat 4s; 
+    animation: move-sat 4s;
+}
+
+@-webkit-keyframes move-sat {
+    0%   {bottom: 0px; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 169px;}
+}
+
+@keyframes move-sat {
+    0%   {bottom: 0px; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 169px;}
+}
+
+.sun {
+	height: 143px;
+	-webkit-animation: move-sun 4s; 
+    animation: move-sun 4s;
+}
+
+@-webkit-keyframes move-sun {
+    0%   {bottom: 0px; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 143px;}
+}
+
+@keyframes move-sun {
+    0%   {bottom: 0px; background: #fb6362; height: 0;}
+    100% {bottom: 0; background: #fb6362; height: 143px;}
+}
+
+/*---------------- 5 ----------------*/
+
+.widget5 {
+	width: 380px;
+	border-radius: 4px;
+	background-color: #ffffff;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.44);
+	padding: 25px;
+	box-sizing:border-box;
+}
+
+.textarea {
+	resize: none;
+	width: 100%;
+	box-sizing:border-box;
+	padding: 14px 12px;
+	background-color: #f4f4f4;
+	color:#999999;
+	font-family: GothamSSm-Light, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	box-shadow: inset 0 1px 0 0.1px rgba(0,0,0,0.25);
+	border: none;
+	min-height: 224px;
+	margin-bottom: 24px;
+}
+
+.emails {
+	position: relative;
+	padding-right: 35px;
+	background-color: #f4f4f4;
+	box-shadow: inset 0 1px 0 0.1px rgba(0,0,0,0.25);
+	margin-bottom: 25px;
+}
+
+.send-mail {
+	position: relative;
+	padding: 11px 24px 10px 12px;
+	margin: 4px;
+	background-color: #404a58;
+	color:#ffffff;
+	font-family: GothamSSm-Light, Arial, sans-serif;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.close {
+	background: url(../img/sprite.png) no-repeat -3px -337px;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 16px;
+	right: 9px;
+}
+
+.close:hover {
+	background: url(../img/sprite.png) no-repeat -43px -337px;
+}
+
+.add {
+	background: url(../img/sprite.png) no-repeat -3px -316px;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 15px;
+    right: 12px;
+}
+
+.add:hover {
+	background: url(../img/sprite.png) no-repeat -43px -316px;
+}
+
+.send-mail p{
+	display: inline-block;
+}
+
+.subjects {
+	padding: 15px 35px 15px 13px;
+	position: relative;
+	background-color: #f4f4f4;
+	box-shadow: inset 0 1px 0 0.1px rgba(0,0,0,0.25);
+	margin-bottom: 23px;
+	overflow: hidden;
+}
+
+.subjects p {
+	font-family: GothamSSm-Light, Arial, sans-serif;
+	font-size: 14px;
+	color:#999999;
+	word-wrap: break-word;
+	width: 100%;
+}
+
+.clip {
+	background: url(../img/sprite.png) no-repeat -3px -350px;
+   	cursor: pointer;
+   	overflow: hidden;
+   
+}
+
+.clip,
+.file-input {
+	width: 21px;
+	height: 19px;
+	position: absolute;
+	top: 14px;
+	right: 12px;
+}
+
+
+input[type="file"] {
+    opacity: 0;
+    filter: alpha(opacity:0);
+	width: 21px;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+.booking-form {
+	background: #fdfdfd;
+	padding: 25px 24px;
+}
+
+input[type="text"] {
+	padding: 15px 45px 15px 15px;
+	border: none;
+	box-shadow: inset 0 1px 0 0.1px rgba(0,0,0,0.25);
+	border-radius: 2px;
+	background-color: #f4f4f4;
+	color: #999898;
+	width: 296px;
+	box-sizing: border-box;
+	font-family: GothamSSm-Light, Arial, sans-serif;
+	font-size: 14px;
+}
+
+label {
+	font-family: GothamSSm-Book, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+	display: block;
+}
+
+input[type="checkbox"] {
+    display:none;            
+}
+
+input[type="checkbox"] + label {
+	margin-top: -6px;
+	font-family: GothamSSm-Light, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    height: 23px;
+    width: 23px;
+    margin: -1px 12px 0 0;
+    background: url(../img/sprite.png) no-repeat;
+    display: inline-block;
+	vertical-align: middle;
+}
+
+input[type="checkbox"] + label::before {
+    background-position: -3px -82px;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-position: -3px -109px;
+}
+
+input[type="checkbox"]:disabled + label::before {
+    background-position: -43px -82px;
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+    background-position: -43px -109px;
+}
+
+button {
+	width: 100%;
+	padding: 21px 14px 17px 0;
+	border: none;
+	border-radius: 3px;
+	background:  #fb6362;
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.55);
+	font-family: GothamSSm-Book, Arial, sans-serif;
+	font-size: 15px;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+}
+
+button:before {
+	content: "";
+	background: url(../img/sprite.png) no-repeat -3px -158px;
+	width: 22px;
+	height: 22px;
+	margin: -2px 12px 0 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+input[type="submit"] {
+	float: right;
+	width: 127px;
+	padding: 16px;
+	border: none;
+	border-radius: 3px;
+	background:  #fb6362;
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.55);
+	font-family: GothamSSm-Book, Arial, sans-serif;
+	font-size: 15px;
+	color: #ffffff;
+	text-align: center;
+}
+
+
+.clear {
+	clear: both;
+}
+
+
+/*----------------- FONTS -----------------*/
+
+/* font-family: "GothamSSm-Book"; */
+@font-face {
+    font-family: "GothamSSm-Book";
+    src: url("../fonts/gotham/GothamSSm-Book.eot");
+    src: url("../fonts/gotham/GothamSSm-Book.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/gotham/GothamSSm-Book.woff") format("woff"),
+    url("../fonts/gotham/GothamSSm-Book.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "GothamSSm-Light"; */
+@font-face {
+    font-family: "GothamSSm-Light";
+    src: url("../fonts/gotham/GothamSSm-Light.eot");
+    src: url("../fonts/gotham/GothamSSm-Light.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/gotham/GothamSSm-Light.woff") format("woff"),
+    url("../fonts/gotham/GothamSSm-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "GothamSSm-Medium"; */
+@font-face {
+    font-family: "GothamSSm-Medium";
+    src: url("../fonts/gotham/GothamSSm-Medium.eot");
+    src: url("../fonts/gotham/GothamSSm-Medium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/gotham/GothamSSm-Medium.woff") format("woff"),
+    url("../fonts/gotham/GothamSSm-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

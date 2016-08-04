@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Binary tree</title>
+	<link href="lib/mocha.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="mocha"></div>
+
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/expect.js"></script>
+	<script src="lib/mocha.js"></script>
+	<script src="lib/chai.js"></script>
+	<script src="lib/sinon.min.js"></script>
+	<script src="lib/sinon-chai.js"></script>
+
+	<script src="./node.js"></script>
+	<script src="./binary-tree.js"></script>
+
+	<script>
+	chai.should();
+	window.expect = chai.expect;
+	</script>
+
+	<script>mocha.setup('bdd')</script>
+	<script src="./test.binary-tree.js"></script>
+	<script>
+		mocha.checkLeaks();
+		mocha.globals(['jQuery']);
+		mocha.run();
+	</script>
+</body>
+</html>

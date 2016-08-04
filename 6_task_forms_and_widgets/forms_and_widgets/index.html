@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Forms and Widgets</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="calendar-container">
+	    <div class="header">
+	         <a href="#" class="previous">
+	            <i class="sprite arrow-prev"></i>
+	            </a>
+	            <h3>
+	                <span>May</span>
+	                <span>2014</span>
+	            </h3>
+	            <a href="#" class="next">
+	                <i class="sprite arrow-next"></i>
+	            </a>
+	        </div>
+	        <div class="form">
+	        <table class="calendar">
+	            <thead>
+	            <tr class="days">
+	                <th>Sun</th>
+	                <th>Mon</th>
+	                <th>Tue</th>
+	                <th>Wed</th>
+	                <th>Thu</th>
+	                <th>Fri</th>
+	                <th>Sat</th>
+	            </tr>
+	            </thead>
+	            <tbody>
+	            <tr>
+	                <td class="off"><a href="#">29</a></td>
+	                <td class="off"><a href="#">30</a></td>
+	                <td><a href="#">1</a></td>
+	                <td><a href="#">2</a></td>
+	                <td class="active"><a href="#">3</a></td>
+	                <td><a href="#">4</a></td>
+	                <td><a href="#">5</a></td>
+	            </tr>
+	            <tr>
+	                <td><a href="#">6</a></td>
+	                <td class="event"><a href="#">7</a></td>
+	                <td><a href="#">8</a></td>
+	                <td><a href="#">9</a></td>
+	                <td><a href="#">10</a></td>
+	                <td><a href="#">11</a></td>
+	                <td><a href="#">12</a></td>
+	            </tr>
+	            <tr>
+	                <td><a href="#">13</a></td>
+	                <td><a href="#">14</a></td>
+	                <td><a href="#">15</a></td>
+	                <td><a href="#">16</a></td>
+	                <td><a href="#">17</a></td>
+	                <td><a href="#">18</a></td>
+	                <td><a href="#">19</a></td>
+	            </tr>
+	            <tr>
+	                <td><a href="#">20</a></td>
+	                <td><a href="#">21</a></td>
+	                <td><a href="#">22</a></td>
+	                <td class="event"><a href="#">23</a></td>
+	                <td><a href="#">24</a></td>
+	                <td><a href="#">25</a></td>
+	                <td><a href="#">26</a></td>
+	            </tr>
+	            <tr>
+	                <td><a href="#">27</a></td>
+	                <td><a href="#">28</a></td>
+	                <td><a href="#">29</a></td>
+	                <td><a href="#">30</a></td>
+	                <td class="off"><a href="#">1</a></td>
+	                <td class="off"><a href="#">2</a></td>
+	                <td class="off"><a href="#">3</a></td>
+	            </tr>
+	            </tbody>
+	        </table>
+	        <div class="button-calendar">
+	            <a href="#">
+	                <p>Add event</p>
+	            </a>
+	        </div>
+	    </div>
+	</div>
+
+	<div class="widget2">
+		<div class="widget2-picture">
+			<img src="./img/paris.jpg" alt="Paris" />
+			<div class="hotel-name">
+				<h3>
+					<a href="#">Hotel Relais</a>
+				</h3>
+				<a class="location" href="#">
+					<div class="map"></div>
+					<p>Paris, France</p>
+				</a>
+			</div>
+		</div>
+		<form class="booking-form" action="">
+			<label>Check in</label>
+			<div class="input-container">
+				<input type="text" value="9 July, 2016" />
+				<a class="click-backgroundg" href="#">
+					<p class="calendar-icon"></p>
+				</a>
+			</div>
+			<label>Check out</label>
+			<div class="input-container">
+				<input type="text" value="16 July, 2016" />
+				<a class="click-backgroundg" href="#">
+					<p class="calendar-icon"></p>
+				</a>
+			</div>
+			<input type="checkbox" id="checkbox" checked hidden />
+			<label for="checkbox">Flexible dates</label>
+			<dl class="check-people left">
+				<label>Adults</label>
+				<div class="input-container">
+					<input type="text" value="2" />
+					<a class="click-backgroundg" href="#">
+						<p class="dropdown"></p>
+					</a>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+				</div>
+			</dl>
+			<dl class="check-people right">
+				<label>Children</label>
+				<div class="input-container">
+					<input type="text" value="1" />
+					<a class="click-backgroundg" href="#">
+						<p class="dropdown"></p>
+					</a>
+				</div>
+			</dl>
+			<div class="clear"></div>
+			<button>SEARCH ROOMS</button>
+		</form>
+	</div>
+
+	<div class="destination-container">
+	    <div class="menu">
+	        <ul>
+	            <li>
+	                <a href="#" class="active-menu">
+	                    <i class="sprite2 icon-review"></i>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    <i class="sprite2 icon-location"></i>
+	                </a>
+	            </li>
+	            <li>
+	                <a href="#">
+	                    <i class="sprite2 icon-star"></i>
+	                </a>
+	            </li>
+	        </ul>
+	    </div>
+	    <div class="info-place">
+	        <h1>My most favourite place in the world</h1>
+	        <span class="reviews">
+	            <a href="#" class="amount">
+	                <span>154 </span>
+	            </a>
+	            Reviews
+	        </span>
+	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a pulvinar ispum. Aliquam sit amet iaculis
+	            dolor. Vivamus sed diam sollicitudin.</p>
+	        <a href="#" class="read-more">
+	            <span>Read more</span>
+	        </a>
+	    </div>
+	    <div class="picture-place">
+	        <img src="img/place-view.jpg" alt="this is picture place"/>
+	        <div class="feedback">
+	            <a href="#" class="message">
+	                <i class="sprite2 icon-message"></i>
+	            </a>
+	                <span class="number">752</span>
+	            <a href="#" class="like">
+	                <i class="sprite2 icon-like"></i>
+	            </a>
+	            <span class="number">2709</span>
+	        </div>
+	    </div>
+	</div>
+
+	<div class="widget4">
+		<ul class="gor">
+			<li>Mon</li>
+			<li>Tues</li>
+			<li>Wed</li>
+			<li>Thu</li>
+			<li>Fri</li>
+			<li>Sat</li>
+			<li>Sun</li>
+		</ul>
+		<ul class="vert">
+			<li>40</li>
+			<li>30</li>
+			<li>20</li>
+			<li>0</li>
+		</ul>
+		<ul class="hist">
+			<li class="mon"><p>49</p></li>
+			<li class="tues"><p>62</p></li>
+			<li class="wed"><p>119</p></li>
+			<li class="thu"><p>158</p></li>
+			<li class="fri"><p>129</p></li>
+			<li class="sat"><p>169</p></li>
+			<li class="sun"><p>143</p></li>
+		</ul>
+	</div>
+
+	<div class="widget5">
+		<form class="mail-form" action="" name="mail-form">
+			<div class="emails">
+				<div class="send-mail">
+					<p>rick.james@mail.com</p>
+					<a href="#"><p class="close"></p></a>
+				</div>
+				<a href="#"><p class="add"></p></a>
+			</div>
+			<div class="subjects">
+				<p>Subject</p>
+				<div class="clip"></div>
+				<div class="file-input"><input type="file" size="4" value="" /></div>
+			</div>
+			<textarea class="textarea" cols="" rows="">Message
+			</textarea>
+			<input type="submit" value="SEND" />
+			<div class="clear"></div>
+		</form>
+	</div>
+</body>

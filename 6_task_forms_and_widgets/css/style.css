@@ -1,0 +1,25 @@
+html {
+
+}
+
+body {
+	background-color: #d9d9d9;
+	padding: 54px;  
+}
+
+.wrapper {
+	width: 346px;
+	border-radius: 4px;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.44);
+}
+
+a {
+	text-decoration: none;
+}
+/*background-color: #fbfbfb;*/
+
+.map2 {
+	background: url(../images/sprite_result.png) no-repeat 0 -34px;
+	width: 12px;
+	height: 17px;
+}

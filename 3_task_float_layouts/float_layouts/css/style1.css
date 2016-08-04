@@ -1,0 +1,16 @@
+.center_div{	
+	background-color: #716558;
+	height: 190px;
+	width: 330px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 10px;
+	box-sizing: border-box;
+	color:#dcd9d5;
+	font-size: 12px;
+	overflow: auto;
+}
